@@ -69,7 +69,7 @@ def generate_data(individual_specs: Dict[str, Any],
                     preferred_learning_style=list(set(random.choices(learning_styles, k=random.randint(1, 3))))
                 )
 
-                course.course_rates[user] = float(random.randint(0, 11))
+                course.course_rates[user] = float(random.randint(0, 10))
 
                 users_for_course.append(user)
 
