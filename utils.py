@@ -56,15 +56,10 @@ def generate_data(individual_specs: Dict[str, Any],
                             appealing_learning_styles=list(
                                 set(random.choices(learning_styles, k=random.randint(1, 3)))))
 
-            available_courses.append(
-                course
-            )
-
             users_for_course = list()
 
             for _ in range(random.randint(0, 4)):
-                users_for_course.append(
-                    Individual(
+                user = Individual(
                         name=str(uuid4())[5:12],
                         background=random.choice(backgrounds),
                         profession=random.choice(professions),
@@ -73,8 +68,12 @@ def generate_data(individual_specs: Dict[str, Any],
                         language=list(set(random.choices(languages, k=random.randint(1, 2)))),
                         preferred_learning_style=list(set(random.choices(learning_styles, k=random.randint(1, 3))))
                     )
-                )
+                
+                course.course_rates[user] = float(random.randint(0, 11))
 
+                users_for_course.append(user)
+            
+            available_courses.append(course)
             past_participants[course] = users_for_course
 
         providers.append(
