@@ -60,19 +60,19 @@ def generate_data(individual_specs: Dict[str, Any],
 
             for _ in range(random.randint(0, 4)):
                 user = Individual(
-                        name=str(uuid4())[5:12],
-                        background=random.choice(backgrounds),
-                        profession=random.choice(professions),
-                        gender=random.choice(genders),
-                        age=random.choice(age_ranges),
-                        language=list(set(random.choices(languages, k=random.randint(1, 2)))),
-                        preferred_learning_style=list(set(random.choices(learning_styles, k=random.randint(1, 3))))
-                    )
-                
+                    name=str(uuid4())[5:12],
+                    background=random.choice(backgrounds),
+                    profession=random.choice(professions),
+                    gender=random.choice(genders),
+                    age=random.choice(age_ranges),
+                    language=list(set(random.choices(languages, k=random.randint(1, 2)))),
+                    preferred_learning_style=list(set(random.choices(learning_styles, k=random.randint(1, 3))))
+                )
+
                 course.course_rates[user] = float(random.randint(0, 11))
 
                 users_for_course.append(user)
-            
+
             available_courses.append(course)
             past_participants[course] = users_for_course
 
@@ -143,6 +143,124 @@ def get_courses_by_topic(query_topic: str, providers: List[Provider]) -> Tuple[L
                 provider_ids.add(provider_id)
 
     return list(provider_ids), possible_courses
+
+
+def save_data(providers: List[Provider]) -> None:
+    data = {}
+    for provider in providers:
+        available_course_data = []
+        past_participant_data = {}
+
+        for course in provider.available_courses:
+            course_rates = {}
+
+            for user, score in course.course_rates.items():
+                course_rates[user.name] = {
+                    "name": user.name,
+                    "background": user.background,
+                    "profession": user.profession,
+                    "gender": user.gender,
+                    "age": user.age,
+                    "language": user.language,
+                    "preferred_learning_style": user.preferred_learning_style,
+                    "score": score
+                }
+
+            available_course_data.append(
+                {
+                    "name": course.name,
+                    "topic": course.topic,
+                    "available_languages": course.available_languages,
+                    "appealing_learning_styles": course.appealing_learning_styles,
+                    "course_rates": course_rates
+                }
+            )
+
+        for course, users in provider.past_participants.items():
+            past_participant_data[course.name] = {
+                "course": {
+                    "name": course.name,
+                    "topic": course.topic,
+                    "available_languages": course.available_languages,
+                    "appealing_learning_styles": course.appealing_learning_styles
+                },
+                "users": [
+                    {
+                        "name": user.name,
+                        "background": user.background,
+                        "profession": user.profession,
+                        "gender": user.gender,
+                        "age": user.age,
+                        "language": user.language,
+                        "preferred_learning_style": user.preferred_learning_style
+                    }
+                    for user in users
+                ]
+            }
+
+        data[provider.name] = {
+            "name": provider.name,
+            "available_courses": available_course_data,
+            "past_participants": past_participant_data
+        }
+
+    with open("saved_data.json", "w+") as fp:
+        json.dump(data, fp)
+
+
+def retrieve_data(data_path: str) -> List[Provider]:
+    with open(data_path, "r") as fp:
+        data = json.load(fp)
+
+    providers = list()
+
+    all_users = dict()
+
+    for provider_name, provider_data in data.items():
+        available_courses = list()
+        past_participants = dict()
+
+        for course_info in provider_data["available_courses"]:
+            course_rates = dict()
+            for user_name, user_info in course_info["course_rates"].items():
+                score = user_info["score"]
+                user_info.pop("score")
+                user = Individual(**user_info)
+
+                all_users[user] = user
+                course_rates[user] = score
+
+            available_courses.append(
+                Course(
+                    name=course_info["name"],
+                    topic=course_info["topic"],
+                    available_languages=course_info["available_languages"],
+                    appealing_learning_styles=course_info["appealing_learning_styles"],
+                    course_rates=course_rates
+                )
+            )
+
+        for course_name, past_participants_info in provider_data["past_participants"].items():
+            users = []
+            for user_info in past_participants_info["users"]:
+                current_user = Individual(**user_info)
+
+                if all_users.get(current_user):
+                    current_user = all_users[current_user]
+
+                users.append(current_user)
+
+            past_participants[Course(**past_participants_info["course"])] = users
+
+        providers.append(
+            Provider(
+                name=provider_name,
+                available_courses=available_courses,
+                past_participants=past_participants
+            )
+        )
+
+    return providers
 
 
 def main():

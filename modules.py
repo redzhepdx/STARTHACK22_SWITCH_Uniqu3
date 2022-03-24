@@ -24,7 +24,6 @@ class Course:
     appealing_learning_styles: List[str]
     course_rates: Dict[Individual, float] = field(default_factory=dict)
 
-
     def __hash__(self) -> int:
         return hash(self.name) ^ hash(self.topic)
 

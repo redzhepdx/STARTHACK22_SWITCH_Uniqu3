@@ -152,7 +152,7 @@ def person_to_person_matching_score(user_x: Individual, user_y: Individual) -> f
     gender_check = float(user_x.gender == user_y.gender)
     age_range_check = float(user_x.age == user_y.age)
 
-    total_similarity = learning_style_overlap * 5 + background_check * 4 +\
+    total_similarity = learning_style_overlap * 5 + background_check * 4 + \
                        profession_check * 4 + gender_check * 1 + age_range_check * 3
 
     return total_similarity / PERSON_TO_PERSON_SIM_MAX
