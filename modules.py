@@ -1,4 +1,4 @@
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from typing import Dict, List
 
 
@@ -22,6 +22,8 @@ class Course:
     topic: str
     available_languages: List[str]
     appealing_learning_styles: List[str]
+    course_rates: Dict[Individual, float] = field(default_factory=dict)
+
 
     def __hash__(self) -> int:
         return hash(self.name) ^ hash(self.topic)
