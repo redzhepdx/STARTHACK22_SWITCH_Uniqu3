@@ -1,0 +1,65 @@
+{
+  "IndividualSpces": {
+    "LearningStyles": [
+      "visual_learner",
+      "auditory_learner",
+      "give_me_the_code",
+      "show_me_the_details",
+      "kine-static",
+      "philosophy_geek",
+      "systems_thinker"
+    ],
+    "Backgrounds": [
+      "Natural Sciences",
+      "Engineering",
+      "Business",
+      "Social Sciences"
+    ],
+    "Professions": [
+      "Physicist",
+      "Software Engineer",
+      "Business Developer",
+      "Human Resource Manager"
+    ],
+    "Gender": [
+      "Male",
+      "Female",
+      "Other"
+    ],
+    "Age": [
+      "18-25",
+      "26-40",
+      "40+"
+    ],
+    "Language": [
+      "German",
+      "Italian",
+      "French",
+      "English"
+    ]
+  },
+  "Providers": [
+    "ETH",
+    "HSG",
+    "Coursera",
+    "Udacity"
+  ],
+  "CourseSpecs": {
+    "Topics": [
+      "Data Science",
+      "Management",
+      "Applied Math",
+      "Software Engineering",
+      "Robotics"
+    ],
+    "LearningStyles": [
+      "visual_learner",
+      "auditory_learner",
+      "give_me_the_code",
+      "show_me_the_details",
+      "kine-static",
+      "philosophy_geek",
+      "systems_thinker"
+    ]
+  }
+}
