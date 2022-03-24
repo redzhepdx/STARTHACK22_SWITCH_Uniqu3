@@ -209,6 +209,11 @@ def save_data(providers: List[Provider]) -> None:
 
 
 def retrieve_data(data_path: str) -> List[Provider]:
+    """
+
+    :param data_path:
+    :return:
+    """
     with open(data_path, "r") as fp:
         data = json.load(fp)
 

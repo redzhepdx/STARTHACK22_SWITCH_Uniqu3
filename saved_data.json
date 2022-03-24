@@ -1,0 +1,537 @@
+{
+  "ETH": {
+    "name": "ETH",
+    "available_courses": [
+      {
+        "name": "Robotics 4120",
+        "topic": "Robotics",
+        "available_languages": [
+          "French",
+          "Italian",
+          "German"
+        ],
+        "appealing_learning_styles": [
+          "systems_thinker",
+          "show_me_the_details",
+          "visual_learner"
+        ],
+        "course_rates": {
+          "37a-109": {
+            "name": "37a-109",
+            "background": "Physicist",
+            "profession": "Engineer",
+            "gender": "Female",
+            "age": "18-25",
+            "language": [
+              "German",
+              "English"
+            ],
+            "preferred_learning_style": [
+              "philosophy_geek",
+              "kine-static",
+              "visual_learner"
+            ],
+            "score": 11.0
+          },
+          "7a0-73a": {
+            "name": "7a0-73a",
+            "background": "Engineering",
+            "profession": "Software Engineer",
+            "gender": "Male",
+            "age": "26-40",
+            "language": [
+              "German"
+            ],
+            "preferred_learning_style": [
+              "kine-static",
+              "auditory_learner",
+              "visual_learner"
+            ],
+            "score": 11.0
+          }
+        }
+      }
+    ],
+    "past_participants": {
+      "Robotics 4120": {
+        "course": {
+          "name": "Robotics 4120",
+          "topic": "Robotics",
+          "available_languages": [
+            "French",
+            "Italian",
+            "German"
+          ],
+          "appealing_learning_styles": [
+            "systems_thinker",
+            "show_me_the_details",
+            "visual_learner"
+          ]
+        },
+        "users": [
+          {
+            "name": "37a-109",
+            "background": "Engineering",
+            "profession": "Physicist",
+            "gender": "Female",
+            "age": "18-25",
+            "language": [
+              "German",
+              "English"
+            ],
+            "preferred_learning_style": [
+              "philosophy_geek",
+              "kine-static",
+              "visual_learner"
+            ]
+          },
+          {
+            "name": "7a0-73a",
+            "background": "Engineering",
+            "profession": "Software Engineer",
+            "gender": "Male",
+            "age": "26-40",
+            "language": [
+              "German"
+            ],
+            "preferred_learning_style": [
+              "kine-static",
+              "auditory_learner",
+              "visual_learner"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "HSG": {
+    "name": "HSG",
+    "available_courses": [
+      {
+        "name": "Data Science cfdc",
+        "topic": "Data Science",
+        "available_languages": [
+          "Italian"
+        ],
+        "appealing_learning_styles": [
+          "show_me_the_details"
+        ],
+        "course_rates": {
+          "515-0c0": {
+            "name": "515-0c0",
+            "background": "Engineering",
+            "profession": "Software Engineer",
+            "gender": "Other",
+            "age": "40+",
+            "language": [
+              "English"
+            ],
+            "preferred_learning_style": [
+              "show_me_the_details",
+              "give_me_the_code",
+              "visual_learner"
+            ],
+            "score": 6.0
+          },
+          "df8-8fb": {
+            "name": "df8-8fb",
+            "background": "Natural Sciences",
+            "profession": "Software Engineer",
+            "gender": "Male",
+            "age": "26-40",
+            "language": [
+              "German",
+              "English"
+            ],
+            "preferred_learning_style": [
+              "systems_thinker",
+              "auditory_learner"
+            ],
+            "score": 5.0
+          }
+        }
+      }
+    ],
+    "past_participants": {
+      "Data Science cfdc": {
+        "course": {
+          "name": "Data Science cfdc",
+          "topic": "Data Science",
+          "available_languages": [
+            "Italian"
+          ],
+          "appealing_learning_styles": [
+            "show_me_the_details"
+          ]
+        },
+        "users": [
+          {
+            "name": "515-0c0",
+            "background": "Engineering",
+            "profession": "Software Engineer",
+            "gender": "Other",
+            "age": "40+",
+            "language": [
+              "English"
+            ],
+            "preferred_learning_style": [
+              "show_me_the_details",
+              "give_me_the_code",
+              "visual_learner"
+            ]
+          },
+          {
+            "name": "df8-8fb",
+            "background": "Natural Sciences",
+            "profession": "Software Engineer",
+            "gender": "Male",
+            "age": "26-40",
+            "language": [
+              "German",
+              "English"
+            ],
+            "preferred_learning_style": [
+              "systems_thinker",
+              "auditory_learner"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "Coursera": {
+    "name": "Coursera",
+    "available_courses": [
+      {
+        "name": "Applied Math 60b0",
+        "topic": "Applied Math",
+        "available_languages": [
+          "Italian",
+          "English"
+        ],
+        "appealing_learning_styles": [
+          "auditory_learner"
+        ],
+        "course_rates": {
+          "d8e-062": {
+            "name": "d8e-062",
+            "background": "Social Sciences",
+            "profession": "Software Engineer",
+            "gender": "Female",
+            "age": "26-40",
+            "language": [
+              "French"
+            ],
+            "preferred_learning_style": [
+              "philosophy_geek"
+            ],
+            "score": 9.0
+          },
+          "302-4d1": {
+            "name": "302-4d1",
+            "background": "Engineering",
+            "profession": "Physicist",
+            "gender": "Male",
+            "age": "18-25",
+            "language": [
+              "German"
+            ],
+            "preferred_learning_style": [
+              "philosophy_geek"
+            ],
+            "score": 4.0
+          },
+          "d39-168": {
+            "name": "d39-168",
+            "background": "Natural Sciences",
+            "profession": "Human Resource Manager",
+            "gender": "Female",
+            "age": "18-25",
+            "language": [
+              "French",
+              "German"
+            ],
+            "preferred_learning_style": [
+              "visual_learner"
+            ],
+            "score": 9.0
+          }
+        }
+      },
+      {
+        "name": "Software Engineering 7165",
+        "topic": "Software Engineering",
+        "available_languages": [
+          "Italian",
+          "English"
+        ],
+        "appealing_learning_styles": [
+          "show_me_the_details",
+          "auditory_learner",
+          "philosophy_geek"
+        ],
+        "course_rates": {}
+      },
+      {
+        "name": "Robotics c200",
+        "topic": "Robotics",
+        "available_languages": [
+          "French",
+          "English"
+        ],
+        "appealing_learning_styles": [
+          "give_me_the_code"
+        ],
+        "course_rates": {
+          "fb5-abe": {
+            "name": "fb5-abe",
+            "background": "Business",
+            "profession": "Business Developer",
+            "gender": "Male",
+            "age": "40+",
+            "language": [
+              "French",
+              "German"
+            ],
+            "preferred_learning_style": [
+              "philosophy_geek"
+            ],
+            "score": 11.0
+          },
+          "54d-2fa": {
+            "name": "54d-2fa",
+            "background": "Social Sciences",
+            "profession": "Software Engineer",
+            "gender": "Male",
+            "age": "40+",
+            "language": [
+              "French",
+              "German"
+            ],
+            "preferred_learning_style": [
+              "systems_thinker"
+            ],
+            "score": 5.0
+          },
+          "4c6-def": {
+            "name": "4c6-def",
+            "background": "Business",
+            "profession": "Human Resource Manager",
+            "gender": "Male",
+            "age": "26-40",
+            "language": [
+              "German"
+            ],
+            "preferred_learning_style": [
+              "show_me_the_details",
+              "give_me_the_code"
+            ],
+            "score": 10.0
+          }
+        }
+      }
+    ],
+    "past_participants": {
+      "Applied Math 60b0": {
+        "course": {
+          "name": "Applied Math 60b0",
+          "topic": "Applied Math",
+          "available_languages": [
+            "Italian",
+            "English"
+          ],
+          "appealing_learning_styles": [
+            "auditory_learner"
+          ]
+        },
+        "users": [
+          {
+            "name": "d8e-062",
+            "background": "Social Sciences",
+            "profession": "Software Engineer",
+            "gender": "Female",
+            "age": "26-40",
+            "language": [
+              "French"
+            ],
+            "preferred_learning_style": [
+              "philosophy_geek"
+            ]
+          },
+          {
+            "name": "302-4d1",
+            "background": "Engineering",
+            "profession": "Physicist",
+            "gender": "Male",
+            "age": "18-25",
+            "language": [
+              "German"
+            ],
+            "preferred_learning_style": [
+              "philosophy_geek"
+            ]
+          },
+          {
+            "name": "d39-168",
+            "background": "Natural Sciences",
+            "profession": "Human Resource Manager",
+            "gender": "Female",
+            "age": "18-25",
+            "language": [
+              "French",
+              "German"
+            ],
+            "preferred_learning_style": [
+              "visual_learner"
+            ]
+          }
+        ]
+      },
+      "Software Engineering 7165": {
+        "course": {
+          "name": "Software Engineering 7165",
+          "topic": "Software Engineering",
+          "available_languages": [
+            "Italian",
+            "English"
+          ],
+          "appealing_learning_styles": [
+            "show_me_the_details",
+            "auditory_learner",
+            "philosophy_geek"
+          ]
+        },
+        "users": []
+      },
+      "Robotics c200": {
+        "course": {
+          "name": "Robotics c200",
+          "topic": "Robotics",
+          "available_languages": [
+            "French",
+            "English"
+          ],
+          "appealing_learning_styles": [
+            "give_me_the_code"
+          ]
+        },
+        "users": [
+          {
+            "name": "fb5-abe",
+            "background": "Business",
+            "profession": "Business Developer",
+            "gender": "Male",
+            "age": "40+",
+            "language": [
+              "French",
+              "German"
+            ],
+            "preferred_learning_style": [
+              "philosophy_geek"
+            ]
+          },
+          {
+            "name": "54d-2fa",
+            "background": "Social Sciences",
+            "profession": "Software Engineer",
+            "gender": "Male",
+            "age": "40+",
+            "language": [
+              "French",
+              "German"
+            ],
+            "preferred_learning_style": [
+              "systems_thinker"
+            ]
+          },
+          {
+            "name": "4c6-def",
+            "background": "Business",
+            "profession": "Human Resource Manager",
+            "gender": "Male",
+            "age": "26-40",
+            "language": [
+              "German"
+            ],
+            "preferred_learning_style": [
+              "show_me_the_details",
+              "give_me_the_code"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "Udacity": {
+    "name": "Udacity",
+    "available_courses": [
+      {
+        "name": "Applied Math 48ad",
+        "topic": "Applied Math",
+        "available_languages": [
+          "French",
+          "Italian",
+          "German"
+        ],
+        "appealing_learning_styles": [
+          "systems_thinker",
+          "auditory_learner",
+          "kine-static"
+        ],
+        "course_rates": {
+          "c0e-f6c": {
+            "name": "c0e-f6c",
+            "background": "Engineering",
+            "profession": "Software Engineer",
+            "gender": "Other",
+            "age": "26-40",
+            "language": [
+              "German"
+            ],
+            "preferred_learning_style": [
+              "give_me_the_code",
+              "kine-static",
+              "philosophy_geek"
+            ],
+            "score": 0.0
+          }
+        }
+      }
+    ],
+    "past_participants": {
+      "Applied Math 48ad": {
+        "course": {
+          "name": "Applied Math 48ad",
+          "topic": "Applied Math",
+          "available_languages": [
+            "French",
+            "Italian",
+            "German"
+          ],
+          "appealing_learning_styles": [
+            "systems_thinker",
+            "auditory_learner",
+            "kine-static"
+          ]
+        },
+        "users": [
+          {
+            "name": "c0e-f6c",
+            "background": "Engineering",
+            "profession": "Software Engineer",
+            "gender": "Other",
+            "age": "26-40",
+            "language": [
+              "German"
+            ],
+            "preferred_learning_style": [
+              "give_me_the_code",
+              "kine-static",
+              "philosophy_geek"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
