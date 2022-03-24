@@ -1,0 +1,19 @@
+{
+  "user_info": {
+    "name": "Jaka Cikac",
+    "background": "Natural Sciences",
+    "profession": "Software Engineer",
+    "gender": "Other",
+    "age": "26-40",
+    "language": [
+      "English",
+      "German"
+    ],
+    "preferred_learning_style": [
+      "auditory_learner",
+      "give_me_the_code",
+      "systems_thinker"
+    ]
+  },
+  "query_topic": "Data Science"
+}
