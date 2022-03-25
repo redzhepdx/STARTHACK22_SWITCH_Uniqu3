@@ -25,8 +25,8 @@ to learning style and personal preferences when it comes to acquiring a new skil
 Note: If you want to learn which specs we used, check ```data/data.json```.
 
 
-## Hackers
-Redzhep Mehmedov Redzhebov
-Jaka Cikac
-Dimitrios Asproulis
-Jovan Vasic
+## Team
+- Redzhep Mehmedov Redzhebov - @redzhepdx
+- Jaka Cikac - @nanorax
+- Dimitrios Asproulis - @upbexonde
+- Jovan Vasic @jovan
