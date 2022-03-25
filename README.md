@@ -29,4 +29,4 @@ Note: If you want to learn which specs we used, check ```data/data.json```.
 - Redzhep Mehmedov Redzhebov - @redzhepdx
 - Jaka Cikac - @nanorax
 - Dimitrios Asproulis - @upbexonde
-- Jovan Vasic @jovan
+- Jovan Vasic - @jovan
