@@ -204,7 +204,7 @@ def save_data(providers: List[Provider]) -> None:
             "past_participants": past_participant_data
         }
 
-    with open("saved_data.json", "w+") as fp:
+    with open("data/saved_data.json", "w+") as fp:
         json.dump(data, fp)
 
 
@@ -269,7 +269,7 @@ def retrieve_data(data_path: str) -> List[Provider]:
 
 
 def main():
-    data_path = "data.json"
+    data_path = "data/data.json"
     individual_specs, course_specs, providers = read_data(data_path)
     providers = generate_data(individual_specs, course_specs, providers)
 

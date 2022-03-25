@@ -7,11 +7,11 @@ from utils import read_data, generate_data, get_courses_by_topic, course_to_user
 
 
 def main():
-    data_path = "data.json"
+    data_path = "data/data.json"
     individual_specs, course_specs, providers = read_data(data_path)
     providers = generate_data(individual_specs, course_specs, providers)
 
-    with open("query.json", "r") as fp:
+    with open("data/query.json", "r") as fp:
         query_data = json.load(fp)
 
     query_user = Individual(**query_data["user_info"])
@@ -44,7 +44,7 @@ def main():
                         f"User to User Score : {p2p_score}\n")
 
     save_data(providers)
-    providers = retrieve_data("saved_data.json")
+    providers = retrieve_data("data/saved_data.json")
 
 
 if __name__ == '__main__':
